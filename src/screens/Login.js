@@ -1,43 +1,43 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, TextInput, Button, AsyncStorage } from "react-native";
+import axios from "axios";
 import api from "./api";
 
 import styles from "./stylesLogin";
 
 export default function Login({ navigation }) {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState(profile);
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState("false");
+  const [user, setUser] = useState("false");
+
+  const profile = AsyncStorage.getItem("user").then(value => setUser(value));
 
   useEffect(() => {
     async function loadData() {
-      const profile = await AsyncStorage.getItem("user");
-
-      if (profile) {
-        // navigation.navigate("Acceleration");
+      if (user) {
+        navigation.navigate("Acceleration");
       }
     }
 
     loadData();
   });
 
-  async function handleSubmit() {
-    setLoading(true);
-    try {
-      const response = await api.post("user/auth", {
+  function handleSubmit() {
+    axios
+      .post("https://api.codenation.dev/v1/user/auth", {
         email,
         password
+      })
+      .then(response => {
+        AsyncStorage.setItem("user", JSON.stringify(response.data));
+      })
+      .catch(err => {
+        console.log(err);
       });
+    setLoading(true);
 
-      const user = response.data;
-
-      AsyncStorage.setItem("user", JSON.stringify(user));
-
-      navigation.navigate("Acceleration");
-    } catch (err) {
-      etLoading(false);
-      console.log(err);
-    }
+    navigation.navigate("Acceleration");
   }
 
   function handleEmailValidate(email) {
