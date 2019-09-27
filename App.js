@@ -1,18 +1,26 @@
-import React from 'react';
-import { createStackNavigator, createAppContainer } from "react-navigation";
+import React from "react";
+import { createAppContainer } from "react-navigation";
+import { createStackNavigator } from "react-navigation-stack";
 
-import Acceleration from './src/screens/Acceleration';
-import Profile from './src/screens/Profile';
+import Acceleration from "./src/screens/Acceleration";
+import Profile from "./src/screens/Profile";
+import Login from "./src/screens/Login";
 
-const AppNavigator = createStackNavigator({
-  Acceleration: {
-    screen: Acceleration
+const AppNavigator = createStackNavigator(
+  {
+    Login: {
+      screen: Login
+    },
+    Acceleration: {
+      screen: Acceleration
+    },
+    Profile: {
+      screen: Profile
+    }
   },
-  Profile: {
-    screen: Profile
+  {
+    headerMode: "none"
   }
-}, {
-  headerMode: 'none'
-});
+);
 
 export default createAppContainer(AppNavigator);
