@@ -15,8 +15,8 @@ import api from "./api";
 export default function Login({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState("false");
-  const [user, setUser] = useState("false");
+  const [loading, setLoading] = useState(false);
+  const [user, setUser] = useState(false);
 
   AsyncStorage.getItem("user").then(value => setUser(value));
 

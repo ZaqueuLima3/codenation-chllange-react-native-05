@@ -36,8 +36,6 @@ export default class Acceleration extends Component {
     if (!user) {
       return navigation.navigate("Login");
     }
-
-    console.log("TEEEST", user);
     axios
       .get("https://api.codenation.dev/v1/acceleration")
       .then(response => {
