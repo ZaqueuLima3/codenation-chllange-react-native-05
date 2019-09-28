@@ -1,5 +1,6 @@
 import React from "react";
 import moment from "moment";
+import axios from "axios";
 import {
   StyleSheet,
   Text,
@@ -7,7 +8,8 @@ import {
   Image,
   ScrollView,
   ActivityIndicator,
-  Animated
+  Animated,
+  AsyncStorage
 } from "react-native";
 
 // const profile = {
@@ -41,17 +43,31 @@ export default class Profile extends React.PureComponent {
 
   state = {
     loading: true,
-    profile: {}
+    profile: {},
+    token: null
   };
 
-  async componentDidMount() {
-    const profile = await AsyncStorage.getItem("user");
+  async componentWillMount() {
+    const value = await AsyncStorage.getItem("user");
+    const userParser = JSON.parse(value);
+    this.setState({ token: userParser.token });
+    console.log(this.state.token);
 
-    if (!profile) {
-      navigation.navigate("Login");
-    }
+    axios
+      .get("https://api.codenation.dev/v1/me/profile", {
+        headers: {
+          Authorization: this.state.token
+        }
+      })
+      .then(response => {
+        this.setState({ profile: response.data, loading: false });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }
 
-    this.setState({ profile });
+  componentDidMount() {
     this.finishLoading();
   }
 
@@ -71,7 +87,7 @@ export default class Profile extends React.PureComponent {
   };
 
   render() {
-    const { profile } = this.state;
+    const { profile, loading } = this.state;
     return (
       <View style={styles.container}>
         <View style={styles.header}>
@@ -81,12 +97,12 @@ export default class Profile extends React.PureComponent {
             source={logo}
           />
         </View>
-        {this.state.loading && (
+        {loading && (
           <View style={styles.loadingContent}>
             <ActivityIndicator size="large" color="#7800ff" />
           </View>
         )}
-        {!this.state.loading && (
+        {!loading && (
           <ScrollView>
             <View style={styles.profileTitle}>
               <Image
