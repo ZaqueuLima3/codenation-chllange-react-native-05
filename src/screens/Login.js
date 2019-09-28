@@ -38,13 +38,13 @@ export default function Login({ navigation }) {
       })
       .then(response => {
         AsyncStorage.setItem("user", JSON.stringify(response.data));
+        navigation.navigate("Acceleration");
       })
       .catch(err => {
         console.log(err);
+        setLoading(false);
       });
     setLoading(true);
-
-    navigation.navigate("Acceleration");
   }
 
   function handleEmailValidate(email) {
@@ -131,7 +131,8 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 43,
     marginTop: 5,
-    backgroundColor: "#7800ff"
+    backgroundColor: "#7800ff",
+    borderRadius: 4
   },
   btnText: {
     fontWeight: "bold",
