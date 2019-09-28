@@ -52,31 +52,32 @@ export default class Acceleration extends Component {
     const { accelerations, loading, user } = this.state;
     return (
       <View style={styles.container}>
-        <View style={styles.header}>
-          <Image
-            className="header-image"
-            style={styles.headerImage}
-            source={{
-              uri:
-                "https://forum.codenation.com.br/uploads/default/original/2X/2/2d2d2a9469f0171e7df2c4ee97f70c555e431e76.png"
-            }}
-          />
-          <TouchableOpacity
-            onPress={() => this.props.navigation.navigate("Profile")}
-          >
-            <Image
-              className="profile-image"
-              style={styles.headerImage}
-              source={{
-                uri: user.picture
-              }}
-            />
-          </TouchableOpacity>
-        </View>
         {loading ? (
           <ActivityIndicator />
         ) : (
           <>
+            <View style={styles.header}>
+              <Image
+                className="header-image"
+                style={styles.headerImage}
+                source={{
+                  uri:
+                    "https://forum.codenation.com.br/uploads/default/original/2X/2/2d2d2a9469f0171e7df2c4ee97f70c555e431e76.png"
+                }}
+              />
+              <TouchableOpacity
+                onPress={() => this.props.navigation.navigate("Profile")}
+              >
+                <Image
+                  className="profile-image"
+                  style={styles.profileImage}
+                  source={{
+                    uri: user.picture
+                  }}
+                />
+              </TouchableOpacity>
+            </View>
+
             <Text style={styles.title}>Acelerações</Text>
             <FlatList
               data={accelerations}
@@ -111,5 +112,10 @@ const styles = StyleSheet.create({
     color: "#7800ff",
     fontSize: 30,
     padding: 16
+  },
+  profileImage: {
+    borderRadius: 22,
+    height: 45,
+    width: 45
   }
 });

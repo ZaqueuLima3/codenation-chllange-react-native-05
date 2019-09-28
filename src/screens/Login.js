@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, TextInput, Button, AsyncStorage } from "react-native";
+import {
+  View,
+  ScrollView,
+  Text,
+  TextInput,
+  Button,
+  AsyncStorage,
+  StyleSheet,
+  TouchableOpacity
+} from "react-native";
 import axios from "axios";
 import api from "./api";
-
-import styles from "./stylesLogin";
 
 export default function Login({ navigation }) {
   const [email, setEmail] = useState("");
@@ -76,16 +83,58 @@ export default function Login({ navigation }) {
         returnKeyType="send"
       />
 
-      <Button
+      <TouchableOpacity
+        style={styles.btn}
         className="submit-login"
         title="Entrar"
-        color="#7800ff"
         disabled={
           (handleEmailValidate(email) && password.length) < 1 ||
           loading === true
         }
         onPress={handleSubmit}
-      ></Button>
+      >
+        <Text style={styles.btnText}>Entrar</Text>
+      </TouchableOpacity>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#fff",
+    padding: 20
+  },
+  title: {
+    color: "#7800ff",
+    fontSize: 30,
+    padding: 16
+  },
+  input: {
+    width: "100%",
+    height: 43,
+    marginBottom: 10,
+    fontSize: 14,
+    paddingLeft: 10,
+    marginHorizontal: 10,
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: "#eaeaea",
+    backgroundColor: "#fafafa"
+  },
+  btn: {
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+    height: 43,
+    marginTop: 5,
+    backgroundColor: "#7800ff"
+  },
+  btnText: {
+    fontWeight: "bold",
+    color: "#fff"
+  }
+});

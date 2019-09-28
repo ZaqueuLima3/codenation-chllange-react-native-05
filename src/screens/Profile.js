@@ -12,27 +12,6 @@ import {
   AsyncStorage
 } from "react-native";
 
-// const profile = {
-//   picture:
-//     "https://secure.gravatar.com/avatar/f50a9db56e231198af3507f10b5d5491?d=mm",
-//   email: "rafael.fuzifaru@gmail.com",
-//   first_name: "Rafael",
-//   last_name: "Fuzifaru Cianci",
-//   phone: "(48) 99110-3535",
-//   gender: 1,
-//   birthday: "1993-04-27T00:00:00-03:00",
-//   linkedin: "https://www.linkedin.com/in/rafaelcianci",
-//   github: "http://github.com/rafacianci",
-//   address: {
-//     Street: "",
-//     ZipCode: "",
-//     Number: "",
-//     ComplementaryAddress: ""
-//   },
-//   language: ["Português - PT", "Inglês - EN", "Japonês - JA"],
-//   name: "Rafael Fuzifaru Cianci"
-// };
-
 const logo = {
   uri:
     "https://forum.codenation.com.br/uploads/default/original/2X/2/2d2d2a9469f0171e7df2c4ee97f70c555e431e76.png"
@@ -49,9 +28,9 @@ export default class Profile extends React.PureComponent {
   async componentWillMount() {
     const { navigation } = this.props;
 
-    const value = await AsyncStorage.getItem("user");
+    const user = await AsyncStorage.getItem("user");
+    const token = JSON.parse(user).token;
 
-    const token = JSON.parse(value).token;
     axios
       .get("https://api.codenation.dev/v1/me/profile", {
         headers: {
@@ -63,7 +42,6 @@ export default class Profile extends React.PureComponent {
       })
       .catch(err => {
         navigation.navigate("Login");
-        console.log(err);
       });
   }
 
