@@ -6,12 +6,12 @@ import api from "./api";
 import styles from "./stylesLogin";
 
 export default function Login({ navigation }) {
-  const [email, setEmail] = useState(profile);
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState("false");
   const [user, setUser] = useState("false");
 
-  const profile = AsyncStorage.getItem("user").then(value => setUser(value));
+  AsyncStorage.getItem("user").then(value => setUser(value));
 
   useEffect(() => {
     async function loadData() {
