@@ -1,1 +1,496 @@
-{"score":100}
+
+> @ test /home/zaqueu/codenation/react-native-5
+> jest --env=jsdom
+
+  console.error node_modules/react-native/node_modules/fbjs/lib/warning.js:30
+    Warning: Async Storage has been extracted from react-native core and will be removed in a future release. It can now be installed and imported from '@react-native-community/async-storage' instead of 'react-native'. See https://github.com/react-native-community/react-native-async-storage
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.warn node_modules/react-native/Libraries/Animated/src/NativeAnimatedHelper.js:248
+    Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. More info: https://github.com/facebook/react-native/issues/11094#issuecomment-263240420
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.warn node_modules/react-native/jest/MockNativeMethods.js:19
+    Calling .setNativeProps() in the test renderer environment is not supported. Instead, mock out your components that use findNodeHandle with replacements that don't rely on the native environment.
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.error node_modules/react-test-renderer/cjs/react-test-renderer.development.js:102
+    Warning: An update to Login inside a test was not wrapped in act(...).
+    
+    When testing, code that causes React state updates should be wrapped into act(...):
+    
+    act(() => {
+      /* fire events that update state */
+    });
+    /* assert on the output */
+    
+    This ensures that you're testing the behavior the user would see in the browser. Learn more at https://fb.me/react-wrap-tests-with-act
+        in Login
+
+  console.log src/screens/Acceleration.js:40
+    TEEEST {}
+
+  console.log src/screens/Acceleration.js:40
+    TEEEST {}
+
+  console.log src/screens/Acceleration.js:40
+    TEEEST {}
+
+  console.log src/screens/Acceleration.js:40
+    TEEEST {}
+
+  console.log src/screens/Acceleration.js:40
+    TEEEST {}
+

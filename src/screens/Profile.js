@@ -43,26 +43,26 @@ export default class Profile extends React.PureComponent {
 
   state = {
     loading: true,
-    profile: {},
-    token: null
+    profile: {}
   };
 
   async componentWillMount() {
-    const value = await AsyncStorage.getItem("user");
-    const userParser = JSON.parse(value);
-    this.setState({ token: userParser.token });
-    console.log(this.state.token);
+    const { navigation } = this.props;
 
+    const value = await AsyncStorage.getItem("user");
+
+    const token = JSON.parse(value).token;
     axios
       .get("https://api.codenation.dev/v1/me/profile", {
         headers: {
-          Authorization: this.state.token
+          Authorization: token
         }
       })
       .then(response => {
         this.setState({ profile: response.data, loading: false });
       })
       .catch(err => {
+        navigation.navigate("Login");
         console.log(err);
       });
   }
